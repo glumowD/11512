@@ -1,0 +1,334 @@
+@import "reset.css" screen;
+/* Контейнер */
+div#container{
+	width: 100vw;
+	height: 100vh;
+	max-height: 100vh;
+	background: url('../assets/sity-image.jpg') no-repeat fixed;
+	background-size: cover;
+	display: -webkit-flex;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Навигация */
+aside{
+	height: 100%;
+	max-width: 288.59px;
+	display: flex;
+	flex-direction: column;
+}
+
+#search{
+	width: 100%;
+	min-height: 45px;
+	padding: 10px 15px;
+	background-color: #EB7B2D;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+#bar{
+	flex: 1;
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+#search form{
+	flex: 7;
+	width: 70%;
+}
+#search form input{
+	border: none;
+	background-color: #EB7B2D;
+	outline: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+#icon-search{
+ font-size: 25px;
+ color: #fff;
+ cursor: pointer;
+ flex: 1;
+}
+
+#user-toolbar{
+	max-height: 51px;
+	background-color: #F7F7F7;
+	position: relative;
+	padding: 5px;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a.user{
+	cursor: pointer;
+	width: 70%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+
+.user-avatar{
+	padding:0 5px; 
+}
+
+.user-avatar img{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+
+}
+
+.user-name{
+	padding: 0 5px;
+	font-size: 18px;
+}
+
+.user-arrow{
+	padding: 0 5px;
+	font-size: 13px;
+	color: #838282;
+}
+
+.stream-count{
+	width: 50px;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.activities-count, .conversations{
+	cursor: pointer;
+	color: #9C9C9C;
+}
+
+#lists-section{
+	display: flex;
+	flex: 1;
+	flex-flow: column;
+	background-color: #F7F7F7;
+	height: 100%;
+}
+
+#lists-section header{
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	overflow: auto;
+	padding: 0 10px;
+}
+
+#lists-section header::-webkit-scrollbar { width: 3px;}
+#lists-section header::-webkit-scrollbar-track {  background-color: #9C9C9C;}
+#lists-section header::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+#lists-section header::-webkit-scrollbar-thumb { height: 50px; background-color: #9C9C9C; border-radius: 3px;}
+#lists-section header::-webkit-scrollbar-corner { background-color: #9C9C9C;}}
+#lists-section header::-webkit-resizer { background-color: #9C9C9C;}
+
+#lists-section header a{
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+#lists-section header a i{
+	flex: 1;
+	color: #9C9C9C;
+	font-size: 20px;
+}
+
+#lists-section header a[data-value="sign"] i{
+	color: #4CB2D4;
+}
+
+
+#lists-section header a span{
+	flex: 5;
+	color: #000;
+}
+
+#lists-section header a .transform-list{
+	flex: 0;
+	opacity: 0;
+}
+#lists-section header a .transform-list i{
+	color: #5D5D5D;
+}
+
+#lists-section header a .transform-list i:hover{
+	color: #000;
+}
+
+#lists-section footer{
+	display: flex;
+	padding: 15px;
+	border-top: 1px solid #9C9C9C;
+	color: #4CB2D4;
+	cursor: pointer;
+}
+
+#lists-section footer i {
+	font-size: 20px;
+	flex: 1;
+	font-weight: 100;
+}
+#lists-section footer a{
+	text-decoration: none;
+	font-size: 20px;
+	flex: 4; 
+	color: #4CB2D4;
+}
+/* Основной контент */
+main{
+	flex: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header#title{
+	background-color: #FF964E;
+	max-height: 45px;
+	height: 45px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+header#title h1{
+	flex: 1;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+header#title a{
+	color: #fff;
+	min-width: 20px;
+	padding-right: 10px;
+	text-decoration: none;
+	font-size: 11px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+header#title a i{
+	text-align: center;
+	padding-bottom: 3px;
+	font-size: 15px;
+}
+
+section#tasks{
+	padding: 0 20px;
+	display: flex;
+	flex-flow: column;
+	flex: 1;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section#tasks::-webkit-scrollbar { width: 3px;}
+section#tasks::-webkit-scrollbar-track {  background-color: #F1A36D;}
+section#tasks::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+section#tasks::-webkit-scrollbar-thumb { height: 50px; background-color: #F1A36D; border-radius: 3px;}
+section#tasks::-webkit-scrollbar-corner { background-color: #F1A36D;}}
+section#tasks::-webkit-resizer { background-color: #F1A36D;}
+
+section#tasks #add-task, section#tasks .newTask{
+	background-color: #F1A36D;
+	margin: 20px 0;
+	display: flex;
+	min-height: 47px;
+	box-sizing: border-box;
+	padding: 15px;
+	align-items: center;
+	border-radius: 3px;
+}
+
+section#tasks .newTask{
+	background-color: #fff;
+	margin: 1px 0;
+}
+
+section#tasks .closeTask, .marker-Task{
+	text-decoration: none;
+	color: #9C9C9C;
+	flex: 0.1;
+}
+section#tasks .name-Task{
+	flex: 4;
+}
+
+#add-task .add-task-button{
+	flex:0.1;
+	color: #fff;
+}
+
+#add-task .add-task-input{
+	flex: 4;
+	background-color: #F1A36D;
+	outline: none;
+	border: none;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.add-task-calendar, .add-task-label{
+	margin-right: 20px;
+	color: #fff;
+	opacity: 0;
+}
+
+.hide{
+flex-basis: 42px;
+}
+
+.hide-element{
+	display: none;
+}
+
+#userSetting{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 4px 5px 20px #666;
+}
+
+#userSetting li{
+	 line-height: 2;
+}
+
+#closed-tasks{
+	margin: 20px 0px;
+}
+
+#closed-tasks a{
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #FF964E;
+}
+div.hidden{
+ display: none;
+}
+
+#settingBar{
+	position: absolute;
+	top: 45px;
+	right: 0;
+	height: 10px;
+	width: 200px;
+	background-color: #000;
+}

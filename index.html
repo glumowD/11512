@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head manifest="toDo.appcache">
+	<meta charset="utf-8">
+	<title> - toDoList</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<aside>
+			<header id="search">
+				<span id="bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
+				<form>
+					<input type="search" name="search" alt="">
+				</form>
+				<span id="icon-search"><i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</header>
+			<div id="user-toolbar">
+				<a class="user" data-path="userSet" data-hide="false">
+				<span class="user-avatar">
+					<img src="assets/avatar.jpg">
+				</span>
+				<span class="user-name">Василий</span>
+				<span class="user-arrow">
+					<i class="fa fa-arrow-down" aria-hidden="true"></i>
+				</span>
+				</a>
+				<div class="stream-count">
+					<p class="activities-count">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+					</p>
+					<p class="conversations">
+						<i class="fa fa-comment-o" aria-hidden="true"></i>
+					</p>
+				</div>
+			</div>
+			<nav id="lists-section">
+				<header>
+					<a href="#" data-value="sign">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<span>Входящие</span>
+						<span class="transform-list"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					</a>
+					<a href="#">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
+						<span class="title">Продукты</span>
+						<span class="transform-list"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					</a>
+					<a href="#">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
+						<span class="title">Фильмы</span>
+						<span class="transform-list"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					</a>
+					<a href="#">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
+						<span class="title">Путешествия</span>
+						<span class="transform-list"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					</a>
+					<a href="#">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
+						<span class="title">Работа</span>
+						<span class="transform-list"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					</a>
+					<a href="#">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
+						<span class="title">Частные</span>
+						<span class="transform-list"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					</a>
+				</header>
+				<footer>
+					<i class="fa fa-plus" aria-hidden="true"></i>
+					<a href="#" id="add-list">Создать список</a>
+				</footer>
+			</nav>
+		</aside>
+		<main>
+			<header id="title">
+				<h1>Фильмы</h1>
+				<a href="#">
+					<i class="fa fa-share-alt" aria-hidden="true"></i>
+					<span>Поделиться</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-sort-alpha-desc" aria-hidden="true"></i>
+					<span>Сортировка</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+					<span>Еще</span>
+				</a>
+				<div id="settingBar">
+					<ul id="sort">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul id="more">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</header>
+			<section id="tasks">
+				<div id="add-task">
+					<a href="#" class="add-task-button">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</a>
+					<input class="add-task-input" type="text" name="addTesk" placeholder="Добавить задачу">
+					<a href="#" class="add-task-calendar"><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+					<a href="#" class="add-task-label">
+						<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div id="container-tasks"></div>
+				<div id="closed-tasks">
+					<a href="#">Показать завершенные задачи</a>
+				</div>
+				<div id="container-closed-tasks" class="hidden">
+					
+				</div>
+			</section>
+		</main>
+	</div>
+	<script type="text/javascript" src="js/todo.js"></script>
+</body>
+</html>
